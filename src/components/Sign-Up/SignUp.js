@@ -1,11 +1,24 @@
 import React from 'react';
-import {Card, Button, In} from '@material-ui/core';
+import {Card, Button, In, AppBar, Toolbar, IconButton, Typography} from '@material-ui/core';
+import MenuIcon from '@material-ui/icons/Menu';
+import {Link} from 'react-router-dom';
 
 function SignUp (props) {
 
     return(
 
-        <h1>SignUp Component</h1>
+        <AppBar>
+            <Toolbar>
+                <IconButton>
+                    <MenuIcon />
+                </IconButton>
+
+                <Typography variant="h6" >
+                     <Link to="/">AppName</Link>
+                </Typography>
+            </Toolbar>
+        </AppBar>
+       
     )
 
 }
